@@ -3,26 +3,38 @@
  *
  * Version 2 - singIt() method eliminates duplicate code and make it easier to add more animals.
  * 
- * @author Jon Cooper
- * @version August 18, 2016 (v0)
+ * @author Drew Bagwell
+ * @version August 29, 2017 (v0)
  */
 
 
 public class OldMacDonald2 
 {
-    
+     /**
+     * sings lines 1 and 5 of each verse
+     */
     public static void eieio() 
     { 
         System.out.println("Old MacDonald had a farm, E I E I O.");
     }
 
 
+     /**
+     * sings line 2
+     * 
+     * @param animal Animal to sing about in the verse
+     */
     public static void hadA(String animal) 
     { 
         System.out.println("And on that farm he had a " + animal + ", E I E I O.");
     }
 
 
+     /**
+     * sings lines 3 and 4
+     * 
+     * @param sound Sound to sing about in the verse
+     */
     public static void withA(String sound) 
     { 
         System.out.println("With a " + sound + " " + sound +  " here and a " + sound + " " + sound +  " there.");
@@ -30,6 +42,12 @@ public class OldMacDonald2
     }
 
     
+     /**
+     * Sings a verse of Old MacDonald
+     *
+     * @param animal Animal to sing about in the verse
+     * @param sound Sound to sing about in the verse
+     */
     public static void singIt(String animal, String sound) 
     {
         eieio();
